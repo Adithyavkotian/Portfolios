@@ -1,0 +1,41 @@
+/* Custom styles on top of Tailwind CSS */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.skills-list li {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.skills-list li:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+}
+
